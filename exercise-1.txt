@@ -1,0 +1,37 @@
+Pseudocode
+1. Newton Second Law
+SET mass equal 600
+SET acceleration equal 2
+CALCULATE mass times acceleration
+STORE the previous calculation to F
+DISPLAY F
+
+2. Tahun Kabisat
+SET year equal to any number
+IF year module to 4 is 0 
+    IF year module to 100 not equal to 0
+        THEN DISPLAY "Tahun Kabisat"
+    ELSE IF year module to 400 not equal to 0
+        THEN DISPLAY "Tahun Kabisat"
+    ELSE
+        THEN DISPLAY "Bukan Tahun Kabisat"
+ELSE 
+    THEN DISPLAY "Bukan Tahun Kabisat"
+
+3. Laundry Day
+STORE total-pakaian to 20
+STORE pakaian to 0
+
+WHILE pakaian <= total-pakaian
+    ADD pakaian by 1
+    IF "pakaian" equals to "total pakaian"
+        START the washing machine
+    ELSE 
+        DO NOT START the washing machine
+
+4. Periksa Kuku
+FOR each siswa in semua-siswa
+    IF siswa HAS kuku panjang
+        DO hukuman untuk siswa
+    ELSE   
+        DO memuji untuk siswa
