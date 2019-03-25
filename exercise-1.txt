@@ -7,31 +7,56 @@ STORE the previous calculation to F
 DISPLAY F
 
 2. Tahun Kabisat
+Algoritma
+1. Choose year to be calculated
+2. If the result of year module to 4 is 0, preceed to step 3. If not, preceed to step 7.
+3. If the result of year module to 100 is not 0, preceed to step 4. If not preceed to step 5.
+4. Show that the year is "Tahun Kabisat"
+5. If the result of year module to 400 is 0, preceed to step 6. If not, preceed to step 7.
+6. Show that the year is "Tahun Kabisat"
+7. Show that the year is "Bukan Tahun Kabisat"
+
+Pseudocode
 SET year equal to any number
 IF year module to 4 is 0 
     IF year module to 100 not equal to 0
         THEN DISPLAY "Tahun Kabisat"
-    ELSE IF year module to 400 not equal to 0
+    ELSE IF year module to 400 equal to 0
         THEN DISPLAY "Tahun Kabisat"
     ELSE
         THEN DISPLAY "Bukan Tahun Kabisat"
+    END IF
 ELSE 
     THEN DISPLAY "Bukan Tahun Kabisat"
+END IF
 
 3. Laundry Day
-STORE total-pakaian to 20
-STORE pakaian to 0
+Algoritma
+1. Check how many shirts we have, which is 20
+2. Check how many shirts inside the washing machine
+3. Add one shirt to washing machine
+4. Check if total shirt inside washing machine equal to how many shirts we have. If no, repeat to step 3, if yes preceed to step 5
+5. Start the washing machine
 
-WHILE pakaian <= total-pakaian
-    ADD pakaian by 1
-    IF "pakaian" equals to "total pakaian"
-        START the washing machine
-    ELSE 
-        DO NOT START the washing machine
+Pseudocode
+SET total-shirts to 20
+SET shirt to 0
+
+REPEAT 
+ADD shirt by 1
+UNTIL shirt equal to total-shirts
+START the washing machine
 
 4. Periksa Kuku
-FOR each siswa in semua-siswa
-    IF siswa HAS kuku panjang
-        DO hukuman untuk siswa
+Algoritma
+1. Cek one student if he/she has long nail. If yes preceed to step 2, if no preceed to step 3.
+2. Give punishment to the student. Preceed to step 4
+3. Give apraisal to the student. Preceed to step 4
+4. Repeat step 1 - 3 until all students are checked.
+
+Pseudocode
+FOR each student in all students.
+    IF student HAS long nail
+        DO punishment for student
     ELSE   
-        DO memuji untuk siswa
+        DO apraisal for student
